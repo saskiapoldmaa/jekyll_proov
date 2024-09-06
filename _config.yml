@@ -97,7 +97,7 @@ title: "Roadmap to CERN" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "A site dedicated to explain the turn of events that landed us at CERN and also some learning materials where I've gathered all of the nuances that are just not explained very well in open-source materials." # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
-baseurl: "/jekyll_pages"
+baseurl: ""
 repo: "https://github.com/daviddarnes/alembic"
 email: "saskia.poldmaa@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
