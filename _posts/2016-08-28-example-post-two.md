@@ -1,18 +1,22 @@
 ---
 title: QDC
 categories:
-- History
-- External sources
 feature_text: |
   The History of the Alembic tool
 ---
 
-Dioscorides' ambix (described in his De materia medica) is a helmet-shaped lid for gathering condensed mercury. For Athenaeus (~ 225 C.E.) it is a bottle or flask. For later chemists it denotes various parts of crude distillation devices.
+QDC is a charge to digital converter. This allows you to measure charge that flows through the QDC. 
 
-<!-- more -->
+![](/assets/images/qdc1.jpeg)
 
-Alembic drawings appear in works of Cleopatra the Alchemist, Synesius, and Zosimos of Panopolis. There were alembics with two (dibikos) and three (tribikos) receivers.[4] According to Zosimos of Panopolis, the alembic was invented by Mary the Jewess.[5]
+The graph above depicts the current through the QDC. As you can see, the signal is not at completely 0 when there is no signal, this is due to the noise. For the noise to not contribute, we must pick a very specific integration window, so that only the charge that flew between t\_start and t\_end will be measured.
 
-The anbik is described by Ibn al-Awwam in his Kitab al-Filaha (Book of Agriculture), where he explains how rose-water is distilled. Amongst others, it is mentioned in the Mafatih al-Ulum (Key of Sciences) of Khwarizmi and the Kitab al-Asrar (Book of Secrets) of Al-Razi. Some illustrations occur in the Latin translations of works which are attributed to Geber.[2]
+![](/assets/images/qdc2.png)
 
-_Originally from [Alembic - Wikipedia](https://en.wikipedia.org/wiki/Alembic)_
+The green signal here is a trigger signal, it functions as a gate. When it goes LOW, the gate closes and current flows onto one plate of the capacitor. An uncharged capacitor initially acts as a wire, so a fast-enough current signal coming through the gate will simply pass through the capacitor, during which charge accumulates on the capacitor. Then, when the gate closes and the capacitor has just reached its maximum voltage, the ADC comes in to measure that voltage. Here an ADC is just used as a voltmeter. 
+
+![](/assets/images/qdc3.png)
+What opens and closes the gate? It is a so-called gate generator that gets the signal somewhat earlier than the other components. This is because the signal is delayed before it reaches the gate. The gate generator then recognizes the rise in current and it opens the gate just in time for the signal to arrive at the gate.  On the drawing, there is not only I(t) - our signal coming into the gate. There is also I\_PED - a pedestal current. Its purpose is to get a smaller relative error on the ADC reading and to bring the capacitor into a mode where it is working linearly, i.e where the effective capacitance is the nominal one. 
+
+![](/assets/images/qdc4.png)
+
