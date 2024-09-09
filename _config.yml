@@ -125,10 +125,10 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Home
   url: /
-- title: Materials
-  url: /materials/
+- title: Articles
+  url: jekyll_proov/materials/
 - title: Blog
-  url: /blog/
+  url: jekyll_proov/blog/
 
 navigation_footer:
 - title: by Saskia
