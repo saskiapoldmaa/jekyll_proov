@@ -69,8 +69,6 @@ collections:
     feature_text: |
       Welcome to the blog
     feature_image: "https://picsum.photos/2560/600?image=866"
-  articles:
-    output: true
 
 # 6. Jekyll collections settings
 defaults:
@@ -124,11 +122,11 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 # 9. Site navigation
 navigation_header:
 - title: Home
-  url: jekyll_proov/
-- title: Articles
-  url: jekyll_proov/materials/
+  url: /
+- title: Materials
+  url: /materials/
 - title: Blog
-  url: jekyll_proov/blog/
+  url: /blog/
 
 navigation_footer:
 - title: by Saskia
