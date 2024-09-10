@@ -126,7 +126,7 @@ navigation_header:
 - title: Home
   url: jekyll_proov/
 - title: Articles
-  url: jekyll_proov/articles/
+  url: /articles/
 - title: Blog
   url: jekyll_proov/blog/
 
