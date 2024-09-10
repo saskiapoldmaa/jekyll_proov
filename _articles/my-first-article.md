@@ -1,6 +1,6 @@
 ---
 title: "My First Article"
-layout: articles
+layout: article
 ---
 
 This is the content of my first article.
