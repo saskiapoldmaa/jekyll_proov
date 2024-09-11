@@ -7,7 +7,9 @@ QDC a.k.a a charge to digital converter allows you to measure the charge that pa
 ![](/assets/images/qdc1.jpeg)
 
 Now let's look at the current at the QDC's input. 
+
 ![](/assets/images/qdc2.png)
+
 As you can see, there is a very strong background in addition to the current signal caused by a detector. For the noise to contribute to our reading as little as possible, and also to not lose any of the actual signal, we must pick a very specific integration window. On the picture you can see why the specific $t_{start}$ and $t_{end}$ were chosen.
 The green signal here is a trigger signal, it functions as a gate. When it goes `LOW`, the gate closes and current flows onto one plate of the capacitor. An uncharged capacitor initially acts as a wire, so a fast-enough current signal coming through the gate will simply pass through the capacitor, during which charge accumulates on the capacitor. Then, when the gate closes and the capacitor has just reached its maximum voltage, the ADC comes in to measure that voltage. Here an ADC is just used as a voltmeter. 
 
