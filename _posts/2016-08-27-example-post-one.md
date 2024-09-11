@@ -1,9 +1,5 @@
 ---
 title: Cherenkov detector
-categories:
-- General
-- External sources
-feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 ![Basic Cherenkov](/assets/images/xcet.gif)
 
