@@ -20,7 +20,8 @@ The results of pressure scans are usually given by # of particles in a spill tha
 
 Here, the x-axis represents the pressure in the Cherenkov detector in bars. On the y-axis is the Cherenkov efficiency.
 The efficiency of a Cherenkov detector is truly not an efficiency; it is actually the fraction of particles that emit light or
-$$\eta_{Cherenkov}=\frac{\text{light-emitting particles in spill}}{\text{trigger rate}}$$
+
+$$\eta=\frac{\text{light-emitting particles in spill}}{\text{trigger rate}}$$
 
 As you can see, at low pressure, the threshold momentum is very high, so there are few particles that actually get detected, but as the pressure increases, the momentum becomes less and less discriminating, so more particles are detected.
 
