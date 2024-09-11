@@ -2,7 +2,7 @@
 title: QDC
 ---
 
-QDC is a charge to digital converter. This allows you to measure the charge that passes through it.
+QDC a.k.a a charge to digital converter allows you to measure the charge that passes through it. It comes in all shapes and sizes ranging from an electrical component to the impressive CAEN v792AC (see picture below) that we are using.
 
 ![](/assets/images/qdc1.jpeg)
 
@@ -13,7 +13,8 @@ The graph above depicts a current signal which is fed into the QDC. As you can s
 The green signal here is a trigger signal, it functions as a gate. When it goes `LOW`, the gate closes and current flows onto one plate of the capacitor. An uncharged capacitor initially acts as a wire, so a fast-enough current signal coming through the gate will simply pass through the capacitor, during which charge accumulates on the capacitor. Then, when the gate closes and the capacitor has just reached its maximum voltage, the ADC comes in to measure that voltage. Here an ADC is just used as a voltmeter. 
 
 ![](/assets/images/qdc3.png)
-What opens and closes the gate? It is a so-called gate generator that gets the signal somewhat earlier than the other components. This is because the signal is delayed before it reaches the gate. The gate generator then recognizes the rise in current and it opens the gate just in time for the signal to arrive at the gate.  On the drawing, there is not only $I(t)$ - our signal coming into the gate. There is also $I_{PED}$ - a pedestal current. Its purpose is to get a smaller relative error on the ADC reading and to bring the capacitor into a mode where it is working linearly, i.e where the effective capacitance is the nominal one. 
+What opens and closes the gate? It is a so-called gate generator that gets the signal somewhat earlier than the other components. This is because the signal is delayed before it reaches the gate. The gate generator then recognizes the rise in current and it opens the gate just in time for the signal to arrive at the gate.  On the drawing, there is not only $I(t)$ - our signal coming into the gate. There is also the pedestal current $I_{PED}$ – a constant current which is also fed into the QDC. 
+Its purpose is to reduce the relative error on the ADC reading (I'm not sure why this is important, since after subtracting the pedestal current in data analysis, the relative error will still be the same) and to bring the capacitor into a mode where it is working linearly, i.e where the effective capacitance is the nominal one. 
 
 ![](/assets/images/qdc4.png)
 
