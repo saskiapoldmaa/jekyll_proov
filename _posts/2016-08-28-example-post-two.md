@@ -1,8 +1,5 @@
 ---
 title: QDC
-categories:
-feature_text: |
-  The History of the Alembic tool
 ---
 
 QDC is a charge to digital converter. This allows you to measure charge that flows through the QDC. 
