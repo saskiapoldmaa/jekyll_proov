@@ -1,5 +1,5 @@
 ---
-title: Description of an Alembic
+title: Cherenkov detector
 categories:
 - General
 - External sources
@@ -10,8 +10,6 @@ feature_image: "https://picsum.photos/2560/600?image=872"
 Cherenkov detectors, also known by the abbreviation XCET, are gas-filled detectors capable of determining if a charged particle passing through them is above a certain cutoff momentum. If the particle is faster than the phase velocity of light in that gas, the gas will emit light (the principle that nothing can be faster than light applies only to the group velocity of light, not the phase velocity).
 
 The threshold momentum is regulated by the pressure in the detector. The higher the pressure, the higher the refractive index and the slower the light travels in that medium. Hence, to increase the threshold momentum for particles, you need to decrease the pressure.
-
-$\frac{1}{2}$
 
 When you combine two Cherenkov detectors at two different pressures, i.e., you have two different momentum cutoffs for particles to emit light, then you can identify all of the particles in the momentum range specified by the cutoff momenta of each of the detectors. A particle will fall into that momentum range if it emits light in one of the Cherenkov detectors but not in the other.
 
